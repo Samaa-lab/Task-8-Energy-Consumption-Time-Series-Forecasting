@@ -11,6 +11,10 @@ useful for load management, dynamic pricing, and demand-response programs.
 (UCI Machine Learning Repository) — 2,075,259 minute-level measurements of electric 
 power consumption for a single household in Sceaux, France.
 
+> **Note:** The full dataset (~127 MB) is not included in this repo due to size. 
+> Download it from the link above, unzip it, and place `household_power_consumption.txt` 
+> in the project root before running the notebook.
+
 ## Approach
 - Parsed the raw semicolon-separated file, combining `Date` + `Time` into a proper 
   datetime index and converting `?` missing markers to `NaN`
